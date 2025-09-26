@@ -1,15 +1,16 @@
-[Andreea Băcescu](./Activități/bacescu.andreea/)  
-[Răzvan Bubulică](./Activități/bubulica.razvan/)  
-[Ioana Bușe](./Activități/buse.ioana/)  
-[Mihaela Ciocoiu](./Activități/ciocoiu.mihaela/)  
-[Liviu Corboveanu](./Activități/corboveanu.liviu/)  
-[Ana Dabu](./Activități/dabu.ana/)  
-[Ionel Glogoveanu](./Activități/glogoveanu.ionel/)  
-[Bogdan Ion](./Activități/ion.bogdan/)  
-[Alexandru Iovănel](./Activități/iovanel.alexandru/)  
-[Lenuța Palea](./Activități/palea.lenuta/)  
-[Andreea Pasere](./Activități/pasere.andreea/)  
-[Cosmin Tarbalescu](./Activități/tarbalescu.cosmin/)  
+1. [Andreea Băcescu](./Activități/bacescu.andreea/)  
+2. [Răzvan Bubulică](./Activități/bubulica.razvan/)  
+3. [Ioana Bușe](./Activități/buse.ioana/)  
+4. [Mihaela Ciocoiu](./Activități/ciocoiu.mihaela/)  
+5. [Liviu Corboveanu](./Activități/corboveanu.liviu/)  
+6. [Ana Dabu](./Activități/dabu.ana/)  
+7. [Ionel Glogoveanu](./Activități/glogoveanu.ionel/)  
+8. [Bogdan Ion](./Activități/ion.bogdan/)  
+9. [Alexandru Iovănel](./Activități/iovanel.alexandru/)  
+10. [Lenuța Palea](./Activități/palea.lenuta/)  
+11. [Andreea Pasere](./Activități/pasere.andreea/)  
+12. [Cosmin Tarbalescu](./Activități/tarbalescu.cosmin/)  
+
 
 
 
