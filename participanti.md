@@ -1,6 +1,6 @@
 [Andreea Băcescu](./Activități/bacescu.andreea/)  
-[Răzvan Bubulică](./Activități/bubulica.razvan/) 
-[Ioana Bușe](./Activități/buse.ioana/) 
+[Răzvan Bubulică](./Activități/bubulica.razvan/)  
+[Ioana Bușe](./Activități/buse.ioana/)  
 [Mihaela Ciocoiu](./Activități/ciocoiu.mihaela/)  
 [Liviu Corboveanu](./Activități/corboveanu.liviu/)  
 [Ana Dabu](./Activități/dacu.ana/)  
@@ -10,6 +10,7 @@
 [Lenuța Palea](./Activități/palea.lenuta/)  
 [Andreea Pasere](./Activități/pasere.andreea/)  
 [Cosmin Tarbalescu](./Activități/tarbalescu.cosmin/)  
+
 
 
 
