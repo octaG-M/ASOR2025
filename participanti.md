@@ -1,4 +1,4 @@
-Andreea Băcescu  
+[Andreea Băcescu](./Activități/bacescu.andreea/)  
 Răzvan Bubulică  
 Ioana Bușe  
 Mihaela Ciocoiu  
@@ -10,4 +10,5 @@ Alexandru Iovănel
 Lenuța Palea  
 Andreea Pasere  
 Cosmin Tarbalescu  
+
 
