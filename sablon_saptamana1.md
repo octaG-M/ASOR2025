@@ -11,7 +11,8 @@ platforma Github
 
 Emulatorul este disponibil [aici](https://www.octawian.ro/fisiere/easy6502_2024/).
 Primul program scris în limbajul de asamblare
-al procesorului 6502:
+al microprocesorului 6502:
 ```
 instrucțiunile programului
 ```
+
