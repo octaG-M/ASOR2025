@@ -59,7 +59,7 @@ atunci când ne referim la Markdown, *flecușteț* (în engleză, colocvial,
 ## CommonMark
 
 Anumite ambiguități, descoperite de către utilizatori în sintaxa 
-inițială a Markdownului, au fost clarificate prin introducerea unei 
+inițială a Markdown-ului, au fost clarificate prin introducerea unei 
 **specificații** (sau **standardizări**) a acestuia, sub numele de 
 [CommonMark](https://spec.commonmark.org/0.31.2/).
 
@@ -72,8 +72,8 @@ specificației (folosit de acest procesor) este disponibil
 
 Alt procesor de Markdown, avansat, este 
 [remark](https://remark.js.org/), în jurul său fiind organizată
-[infrastructura de traducere](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs#about-using-markdown-and-liquid-in-github-docs) în HTML 
-a codurilor-sursă Markdown de pe platforma Github.
+[infrastructura de traducere](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs#about-using-markdown-and-liquid-in-github-docs) 
+în HTML a codurilor-sursă Markdown de pe platforma Github.
 
 Aceste procesoare 
 [parsează](https://en.wikipedia.org/wiki/Parsing) 
@@ -101,8 +101,9 @@ respectând specificația CommonMark, cu numele de
 **Markdown cu aromă de GitHub** 
 ([GFM](https://github.github.com/gfm/#what-is-github-flavored-markdown-); 
 în engleză,
-[GitHub Flavored Markdown](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs#about-using-markdown-and-liquid-in-github-docs)). Astfel, în
-această variantă de Markdown, există adnotări suplimentare pentru:
+[GitHub Flavored Markdown](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs#about-using-markdown-and-liquid-in-github-docs)). 
+Astfel, în această variantă de Markdown, există adnotări suplimentare 
+pentru:
 
 - [alerte](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts)
 - [tabele](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
