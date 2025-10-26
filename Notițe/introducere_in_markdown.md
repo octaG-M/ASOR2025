@@ -1,8 +1,8 @@
 # Ce este Markdown-ul?
 
 - [CommonMark](#commonmark)
-- [Elemente de Markdown](#elemente-de-markdown)
 - [Markdown-ul de pe platforma GitHub](#markdown-ul-de-pe-platforma-github)
+- [Elemente de Markdown](#elemente-de-markdown)
 
 Textul pe care îl citim într-o pagină **web** 
 (o știre recentă, descrierea unui fenomen, șamd.) a fost
