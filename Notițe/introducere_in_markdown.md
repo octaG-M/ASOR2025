@@ -59,9 +59,11 @@ atunci când ne referim la Markdown, *flecușteț* (în engleză, colocvial,
 
 ## CommonMark
 
-Anumite ambiguități, descoperite de către utilizatori în sintaxa 
-inițială a Markdown-ului, au fost clarificate prin introducerea unei 
-**specificații** (sau **standardizări**) a acestuia, sub numele de 
+Anumite 
+[ambiguități](https://babelmark.github.io/faq/#what-is-this-for), 
+descoperite de către utilizatori în sintaxa inițială a Markdown-ului, 
+au fost clarificate prin introducerea unei **specificații** (sau 
+**standardizări**) a acestuia, sub numele de 
 [CommonMark](https://spec.commonmark.org/0.31.2/).
 
 Un procesor de [M↓](https://github.com/dcurtis/markdown-mark) 
@@ -156,9 +158,12 @@ Putem folosi și
 <https://www.nume1.ro>
 ```
 
-Pe platforma GitHub, adresele relative se exprimă în funcție de
-rădăcina
-[proiectului](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#relative-links).
+Pe platforma GitHub:
+- adresele relative se exprimă în funcție de rădăcina
+  [proiectului](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-  github/basic-writing-and-formatting-syntax#relative-links)
+- pentru formarea auto-legăturilor 
+  [nu este nevoie](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#urls) 
+  de încadrarea adresei de parantezele unghiulare `<`, `>`.
 
 [Stilizarea](https://spec.commonmark.org/0.31.2/#html-block) 
 afișării unor fragmente de text permite:
@@ -279,6 +284,17 @@ locul unde trebuie realizată întreruperea:
 [Comentariile](https://spec.commonmark.org/0.31.2/#example-179)
 se preiau din HTML: `<!-- comentariu -->`. 
 
+> [!Note]
+> Commentariile HTML rămân vizibile în codul-sursă HTML. 
+> Utilizatorul 
+> [Magnus](https://stackoverflow.com/questions/4823468/comments-in-markdown#answer-20885980), 
+> de pe platforma <https://stackoverflow.com/>, a construit
+> o tehnică de comentariu bazată pe o remarcă a lui John Gruber:
+>
+>   ```markdown
+>   [//]: # (comentariu)   
+>   ```
+
 [Imaginile](https://spec.commonmark.org/0.31.2/#images) 
 întrebuințează codul hiper-legăturilor 
 [prefixat](https://spec.commonmark.org/0.31.2/#example-531) 
@@ -320,6 +336,13 @@ se realizează ușor cu
      B-->C["Da"] & D["Nu"] & E["Nu m-am decis încă"]
    ```
 ---
+
+În concluzie, scrierea unui text folosind Markdown-ul trebuie
+să fie la fel de simplă ca scrierea unui email:
+
+> ...you should be able to just 
+> [write as you do in email](http://www.aaronsw.com/2002/atx/intro)
+> ([Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz))
 
 În concluzie, scrierea unui text folosind Markdown-ul trebuie
 să fie la fel de simplă ca scrierea unui email:
