@@ -160,7 +160,7 @@ Putem folosi și
 
 Pe platforma GitHub:
 - adresele relative se exprimă în funcție de rădăcina
-  [proiectului](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-  github/basic-writing-and-formatting-syntax#relative-links)
+  [proiectului](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#relative-links)
 - pentru formarea auto-legăturilor 
   [nu este nevoie](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#urls) 
   de încadrarea adresei de parantezele unghiulare `<`, `>`.
