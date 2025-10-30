@@ -37,7 +37,8 @@ Iată o comparație între HTML:
 <strong>adnotare</strong>
 ```
 
-și Markdown:
+și 
+[Markdown](https://spec.commonmark.org/0.31.2/#emphasis-and-strong-emphasis):
 
 ```markdown
 **adnotare**
@@ -148,6 +149,13 @@ Hiper-legăturile (linkurile) pot fi realizate atât cu adrese
 [textul hiper-legăturii](./programe/unealta2.py)
 ```
 
+Putem folosi și 
+[auto](https://spec.commonmark.org/0.31.2/#autolinks)-legăturile:
+
+```markdown
+<https://www.nume1.ro>
+```
+
 Pe platforma GitHub, adresele relative se exprimă în funcție de
 rădăcina
 [proiectului](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#relative-links).
@@ -218,6 +226,17 @@ Pe platforma Github, acestor fragmente li se pot adăuga: un
 [adnotări](https://docs.github.com/en/contributing/writing-for-github-docs/annotating-code-examples) 
 în cazul codurilor complexe.
 
+Fragmentele de cod pe care dorim să le inserăm 
+[pe un singur rând](https://en.wikipedia.org/wiki/HTML_element#Inline_elements) 
+se [plasează](https://spec.commonmark.org/0.31.2/#code-spans) 
+între caractere `` ` ``. Codul HTML corespunzător este `<code>`:
+
+```markdown
+În PowerShell, comanda `cls` șterge caracterele afișate. 
+Se poate folosi și varianta: 
+<code style="color:green;">clear</code>.
+```
+
 [Liniile orizontale](https://spec.commonmark.org/0.31.2/#thematic-breaks) 
 de despărțire (`<HR/>` în HTML) necesită un marcaj format din 
 **cel puțin trei** caractere:  
@@ -250,11 +269,55 @@ marcaje Markdown, sunt **prefixate** de caracterul `>`:
 O linie de text *prea lungă* poate fi 
 [ruptă](https://spec.commonmark.org/0.31.2/#hard-line-breaks) 
 prin introducerea caracterului `\` (`<BR/>` în HTML) în 
-locul unde trebuie realizată ruperea:
+locul unde trebuie realizată întreruperea:
 
    ```markdown
    o linie prea\
    lungă
+   ```
+
+[Comentariile](https://spec.commonmark.org/0.31.2/#example-179)
+se preiau din HTML: `<!-- comentariu -->`. 
+
+[Imaginile](https://spec.commonmark.org/0.31.2/#images) 
+întrebuințează codul hiper-legăturilor 
+[prefixat](https://spec.commonmark.org/0.31.2/#example-531) 
+de caracterul `!`:
+
+   ```markdown
+   Iată captura de ecran cerută:
+   ![Informația (alt) despre imagine](adresa web relativă/absolută)
+   Clicați pe ilustrația următoare 
+   pentru a vizita pagina dorită:
+   [![Informația](adresa ilustrației)](adresa paginii)
+   ```
+
+De exemplu, un
+[octocat](https://octodex.github.com/) 
+GitHub:
+
+[![Octocat realizat de johan](https://gist.githubusercontent.com/johan/1007813/raw/a25829510f049194b6404a8f98d22978e8744a6f/octocat.svg)](https://gist.github.com/johan/1007813)
+
+Pe platforma Github, 
+[diagramele](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/) 
+se realizează ușor cu 
+[biblioteca](https://mermaid.js.org/intro/getting-started.html#requirements-for-the-mermaid-api) 
+[Mermaid](https://mermaid.js.org/):
+
+   ~~~markdown
+   ```mermaid        
+   %% diagramă de flux de la stânga la dreapta
+   flowchart LR
+     A(["Chestionar"])==>B{"Este Markdown-ul greu de utilizat?"}
+     B-->C["Da"] & D["Nu"] & E["Nu m-am decis încă"]
+   ```
+   ~~~
+
+   ```mermaid        
+   %% diagramă de flux de la stânga la dreapta
+   flowchart LR
+     A(["Chestionar"])==>B{"Este Markdown-ul greu de utilizat?"}
+     B-->C["Da"] & D["Nu"] & E["Nu m-am decis încă"]
    ```
 ---
 
