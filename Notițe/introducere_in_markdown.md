@@ -226,10 +226,10 @@ de cod, se recomandă să precizăm numele
    ```
    ~~~
 
-Pe platforma Github, acestor fragmente li se pot adăuga: un 
-**buton de copiere** (a instrucțiunilor), respectiv
-[adnotări](https://docs.github.com/en/contributing/writing-for-github-docs/annotating-code-examples) 
-în cazul codurilor complexe.
+Pe platforma Github, acestor fragmente li se pot adăuga: 
+- un **buton de copiere** (a instrucțiunilor)
+- [adnotări](https://docs.github.com/en/contributing/writing-for-github-docs/annotating-code-examples) 
+  (comentarii) în cazul codurilor complexe.
 
 Fragmentele de cod pe care dorim să le inserăm 
 [pe un singur rând](https://en.wikipedia.org/wiki/HTML_element#Inline_elements) 
@@ -336,13 +336,6 @@ se realizează ușor cu
      B-->C["Da"] & D["Nu"] & E["Nu m-am decis încă"]
    ```
 ---
-
-În concluzie, scrierea unui text folosind Markdown-ul trebuie
-să fie la fel de simplă ca scrierea unui email:
-
-> ...you should be able to just 
-> [write as you do in email](http://www.aaronsw.com/2002/atx/intro)
-> ([Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz))
 
 În concluzie, scrierea unui text folosind Markdown-ul trebuie
 să fie la fel de simplă ca scrierea unui email:
