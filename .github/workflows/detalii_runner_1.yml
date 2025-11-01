@@ -6,19 +6,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Obtinerea detaliilor
+      - name: &numele Obtinerea detaliilor
         run: |
           mkdir -p ${{ runner.temp }}/octavian/notite
           cd ${{ runner.temp }}/octavian/notite
           touch -t 202511011030 notita1
-          echo "Informatii:" > notita1
+          echo "Informatii:" | cat > notita1
           uname -r > notita1
-          echo "==="
-          exit 0
+          cat etc/*-release >> notita1
+          echo "===" | cat >> notita1
+          exit EXIT_SUCCESS
       - name: Incarcarea detaliilor
-        if: ${{ always() }}
+        if: ${{ success() }}
         uses: actions/upload-artifact@v4
         with: 
-          name: Obtinerea detaliilor
+          name: *numele
           path: ${{ runner.temp }}/octavian/notite/notita1
    
