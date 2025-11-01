@@ -1,0 +1,28 @@
+name: Detalii despre runner
+on: 
+  workflow_dispatch: !!map {}
+jobs:
+  detaliile-cerute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: &obtinere obtinerea-detaliilor
+        run: |
+          mkdir -p ${{ runner.temp }}/octavian/notite
+          cd ${{ runner.temp }}/octavian/notite
+          touch -t 202511011030 notita1
+          echo Informatii: > notita1
+          echo === >> notita1
+          uname -r >> notita1
+          echo === >> notita1
+          cat /etc/*-release >> notita1
+          echo === >> notita1
+          whoami >> notita1
+          echo === >> notita1
+          exit 0
+      - name: incarcarea-detaliilor
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v4
+        with: 
+          name: *obtinere
+          path: ${{ runner.temp }}/octavian/notite/notita1
