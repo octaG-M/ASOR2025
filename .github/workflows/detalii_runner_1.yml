@@ -11,9 +11,13 @@ jobs:
           mkdir -p ${{ runner.temp }}/octavian/notite
           cd ${{ runner.temp }}/octavian/notite
           touch -t 202511011030 notita1
-          echo "Informatii:" | cat > notita1
+          echo "Informatii:" | cat > notita1          
+          echo "===" | cat >> notita1
           uname -r > notita1
-          cat etc/*-release >> notita1
+          echo "===" | cat >> notita1
+          cat /etc/*-release >> notita1
+          echo "===" | cat >> notita1
+          whoami | cat >> notita1
           echo "===" | cat >> notita1
           exit EXIT_SUCCESS
       - name: Incarcarea detaliilor
