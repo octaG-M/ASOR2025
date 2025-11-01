@@ -1,0 +1,24 @@
+name: Detalii despre runner
+on: 
+  workflow_dispatch: 
+jobs:
+  detaliile-cerute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtinerea detaliilor
+      - uses: actions/checkout@v5
+        run: |
+          mkdir -p ${{ runner.temp }}/octavian/notite
+          cd ${{ runner.temp }}/octavian/notite
+          touch -t 202511011030 notita1
+          echo "Informatii:" > notita1
+          uname -r > notita1
+          echo "==="
+          exit 0
+      - name: Incarcarea detaliilor
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with: 
+          name: Obtinerea detaliilor
+          path: ${{ runner.temp }}/octavian/notite/notita1
+   
