@@ -19,7 +19,7 @@ jobs:
           echo "===" | cat >> notita1
           whoami | cat >> notita1
           echo "===" | cat >> notita1
-          exit EXIT_SUCCESS
+          exit 0
       - name: Incarcarea detaliilor
         if: ${{ success() }}
         uses: actions/upload-artifact@v4
