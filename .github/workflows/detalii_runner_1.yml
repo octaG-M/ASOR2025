@@ -5,8 +5,8 @@ jobs:
   detaliile-cerute:
     runs-on: ubuntu-latest
     steps:
-      - name: Obtinerea detaliilor
       - uses: actions/checkout@v5
+      - name: Obtinerea detaliilor
         run: |
           mkdir -p ${{ runner.temp }}/octavian/notite
           cd ${{ runner.temp }}/octavian/notite
