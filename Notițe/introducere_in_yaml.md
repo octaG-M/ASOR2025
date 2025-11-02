@@ -233,7 +233,7 @@ textul2: "Afară e frig."
 ...
 ```
 
-> [Note!]
+> [!Note]
 > Prezența caracterului
 > [spațiu](https://yaml.org/spec/1.2.2/#white-space-characters) 
 > ne permite utilizarea caracterului `:`
