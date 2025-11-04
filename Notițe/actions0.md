@@ -152,7 +152,7 @@ adică
 
 Pe platforma GitHub, putem exprima prin blocuri de cod
 scrise în limbajul de serializare a datelor 
-[YAML](./Notițe/introducere_in_yaml.md)
+[YAML](./introducere_in_yaml.md)
 o clasă de 
 [obiecte administrative](https://github.com/marketplace?type=actions) 
 dedicate punerii
