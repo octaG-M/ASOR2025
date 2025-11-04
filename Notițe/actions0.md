@@ -1,6 +1,6 @@
 # Ce este o acțiune GitHub?
 
-- [DevOps, Iac, GitOps](#devops-iac-gitops)
+- [DevOps, IaC, GitOps](#devops-iac-gitops)
 - [Github Actions](#github-actions)
 
 Realizarea unui produs informatic presupune,
@@ -129,6 +129,14 @@ Dacă se folosesc integrarea **continuă** de mici modificări
 ([reușite](https://www.atlassian.com/continuous-delivery/principles/pipeline)), 
 atunci avem de a face cu metodologia 
 [CI/CD](https://github.com/resources/articles/ci-cd).
+
+> [!Caution]
+> Litera **D** din acronimul CI/CD înseamnă atât 
+> **distribuire** (în mediul de producție al 
+> dezvoltatorului și **nu** către clienți) cât și 
+> **lansare** (în engleză, *deployment*), termen 
+> la care nu ne referim momentan. Această simplificare
+> poate fi justificată prin generalitatea textului de față.
 
 Modificările care survin pe durata ciclului de dezvoltare
 a produsului informatic implică de multe ori și schimbarea
