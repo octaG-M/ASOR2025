@@ -111,7 +111,7 @@ la începutul dezvoltării proiectului, precum:
 
 La operaționalizarea luării de decizii noi de către dezvoltator, 
 adică la 
-[operaționalizarea dezvoltării](https://github.com/resources/articles/what-is-sdlc#how-can-devops-be-integrated-into-sdlc)
+[operaționalizarea dezvoltării](https://github.com/resources/articles/what-is-sdlc#how-can-devops-be-integrated-into-the-sdlc)
 (sau, pe scurt, **dezvoltare și operații**), ne referim cu acronimul 
 [DevOps](https://devops.com/the-evolution-of-devops/).
 Un aspect esențial al DevOps-ului se referă la **metodologia**
