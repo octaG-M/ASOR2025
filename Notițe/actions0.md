@@ -2,7 +2,7 @@
 
 - [DevOps, Iac, GitOps](#devops-iac-gitops)
 - [GitHub Actions](#github-actions)
-  - [O acțiune GitHub](#o-actiune-github)
+  - [O acțiune GitHub](#o-acțiune-github)
 
 Realizarea unui produs informatic presupune,
 [în afară de](https://en.wikipedia.org/wiki/Software_testing)
