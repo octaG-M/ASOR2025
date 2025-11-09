@@ -1,7 +1,8 @@
 # Ce este o acțiune GitHub?
 
-- [DevOps, IaC, GitOps](#devops-iac-gitops)
-- [Github Actions](#github-actions)
+- [DevOps, Iac, GitOps](#devops-iac-gitops)
+- [GitHub Actions](#github-actions)
+  - [O acțiune GitHub](#o-actiune-github)
 
 Realizarea unui produs informatic presupune,
 [în afară de](https://en.wikipedia.org/wiki/Software_testing)
@@ -160,7 +161,7 @@ adică
 
 Pe platforma GitHub, putem exprima prin blocuri de cod
 scrise în limbajul de serializare a datelor 
-[YAML](./introducere_in_yaml.md)
+[YAML](./Notițe/introducere_in_yaml.md)
 o clasă de 
 [obiecte administrative](https://github.com/marketplace?type=actions) 
 dedicate punerii
@@ -169,6 +170,25 @@ dedicate punerii
 Un exemplu de acțiune GitHub dedicată metodologiei GitOps
 este disponibil 
 [aici](https://github.com/Staffbase/gitops-github-action).
+
+### O acțiune GitHub
+
+Următoarea acțiune GitHub instalează sistemul de operare
+[Ubuntu](https://ubuntu.com/download/desktop) 
+pe o 
+[mașină virtuală](https://docs.github.com/en/actions/concepts/runners/github-hosted-runners#supported-runners-and-hardware-resources), construiește un fișier-text
+și colectează în acesta câteva informații despre:
+- [nucleul](https://man7.org/linux/man-pages/man1/uname.1.html) 
+  sistemului de operare
+- numele, versiunea și 
+  [detaliile de distribuție](https://www.cyberciti.biz/faq/find-linux-distribution-name-version-number/)
+  ale sistemului de operare
+- [utilizatorul](https://man7.org/linux/man-pages/man1/whoami.1.html) 
+  care personalizează intervenția scriptului pe mașina 
+  virtuală.
+
+Fișierul va fi transmis platformei Github sub forma unui
+[artefact](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts).
 
 ```yaml
 name: Detalii despre runner
