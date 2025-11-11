@@ -167,8 +167,8 @@ o clasă de
 dedicate punerii
 în practică a metodologiei CI/CD, și anume
 [acțiunile GitHub](https://docs.github.com/en/actions/get-started/understand-github-actions#actions).
-Un exemplu de acțiune GitHub dedicată metodologiei GitOps
-este disponibil 
+Un exemplu de acțiune GitHub care pune în practică 
+metodologia GitOps se găsește 
 [aici](https://github.com/Staffbase/gitops-github-action).
 
 ### O acțiune GitHub
@@ -187,7 +187,7 @@ pe o
   care personalizează intervenția scriptului pe mașina 
   virtuală.
 
-Fișierul va fi transmis platformei Github sub forma unui
+Fișierul îi va fi transmis platformei Github sub forma unui
 [artefact](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts).
 
 ```yaml
