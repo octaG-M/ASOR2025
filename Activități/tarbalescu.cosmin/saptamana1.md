@@ -1,6 +1,6 @@
 # Program 1
 De rulat cu Easy6502:
-
+&#238
 ```6502
 lda #%00 00 01 01
 clc
