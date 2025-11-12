@@ -1,4 +1,4 @@
-# Program 1
+### Program 1
 De rulat cu Easy6502:
 
 ```6502
