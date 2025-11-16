@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs: 
   mesagerie: 
-    runs-on: ubuntu-latest, 
+    runs-on: ubuntu-latest
     steps:
       - run: echo Salut uzual3!
 
