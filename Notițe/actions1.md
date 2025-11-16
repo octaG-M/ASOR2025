@@ -105,7 +105,7 @@ name: Comanda manuală cu date de intrare
 on: 
   workflow_dispatch:
     inputs:
-      opțiunile_mele:
+      optiunile_mele:
         description: 'Ce alegeți?'
         required:    true
         type:        choice
@@ -120,7 +120,7 @@ jobs:
       - run: >
                echo Salut!
                Am optat pentru
-               ${{ inputs.opțiunile_mele }}.
+               ${{ inputs.optiunile_mele }}.
 ```
 
 Rezultatul acțiunii GitHub este disponibil în 
