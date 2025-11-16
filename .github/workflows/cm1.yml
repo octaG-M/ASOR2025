@@ -5,7 +5,7 @@ jobs: !!map {
   mesagerie: !!map { 
     runs-on: ubuntu-latest, 
     steps: !!seq [ 
-      run: echo Salut2 
+      run: echo Salut3 
       ] 
   } 
 }
