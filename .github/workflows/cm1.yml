@@ -1,13 +1,10 @@
-
-name: Comanda manuală 1
+name: !!str "Comanda manuală cu tipuri de date"
 on: !!str "workflow_dispatch"
 jobs: !!map { 
   mesagerie: !!map { 
     runs-on: ubuntu-latest, 
     steps: !!seq [ 
-      run: echo Salut3 
+      run: echo Salut cu tipuri de date! 
       ] 
   } 
 }
-
-
