@@ -1,4 +1,9 @@
 name: Comanda manuală 1
 on:
   workflow_dispatch: !!null null
-jobs: !!map {}
+jobs:
+  mesagerie:
+    runs-on: ubuntu-latest
+    steps: !!seq []
+
+
