@@ -1,10 +1,8 @@
-name: !!str "Comanda manuală cu tipuri de date"
-on: !!str "workflow_dispatch"
-jobs: !!map { 
-  mesagerie: !!map { 
+name: Comanda manuală uzuală
+on: 
+  workflow_dispatch:
+jobs: 
+  mesagerie: 
     runs-on: ubuntu-latest, 
-    steps: !!seq [ 
-      run: echo Salut cu tipuri de date! 
-      ] 
-  } 
-}
+    steps:
+      - run: echo Salut uzual!
