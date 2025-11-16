@@ -1,6 +1,6 @@
 # Conținutul fișierului YAML al unei acțiuni GitHub
 
-- [Rulare manuală](#rulare-manuală)
+- [Declanșare manuală](#declanșare-manuală)
 
 Automatizarea oferită de platforma GitHub
 presupune configurarea unui 
@@ -56,7 +56,7 @@ on:
   [ evenimentul1, evenimentul2 ]
 ```
 
-## Rulare manuală
+## Declanșare manuală
 
 Un eveniment aparte este al declanșării 
 [manuale](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch) 
