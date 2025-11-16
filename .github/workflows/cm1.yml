@@ -1,7 +1,7 @@
-name: >-
-        Comanda manuală 
-        cu date de intrare
-        și nume-de-rulare
+name:   >-
+          Comanda manuală 
+          cu date de intrare
+          și nume-de-rulare
 run-name: Testarea opțiunii ${{ inputs.optiunile_mele }}
 on: 
   workflow_dispatch:
