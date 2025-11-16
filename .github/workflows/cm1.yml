@@ -1,0 +1,4 @@
+name: Comanda manuală 1
+on:
+  workflow_dispatch: !!null null
+jobs: !!map {}
