@@ -1,8 +1,12 @@
-name: Comanda manuală cu date de intrare
+name: >-
+        Comanda manuală 
+        cu date de intrare
+        și nume-de-rulare
+run-name: Testarea opțiunii ${{ inputs.optiunile_mele }}
 on: 
   workflow_dispatch:
     inputs:
-      optiunile-mele:
+      optiunile_mele:
         description: 'Ce alegeți?'
         required:    true
         type:        choice
@@ -17,5 +21,4 @@ jobs:
       - run: >
                echo Salut!
                Am optat pentru
-               ${{ inputs.optiunile-mele }}.
-
+               ${{ inputs.optiunile_mele }}.
