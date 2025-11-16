@@ -1,10 +1,12 @@
-name: Comanda manuală uzuală
-on: 
-  workflow_dispatch:
-jobs: 
-  mesagerie: 
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo Salut uzual3!
-
-
+!!map {
+     name: !!str "Comanda manuală cu tipuri de date45",
+     on:   !!str "workflow_dispatch",
+     jobs: !!map { 
+             mesagerie: !!map { 
+                          runs-on: !!str "ubuntu-latest", 
+                          steps:   !!seq [ 
+                                     run: !!str "echo Salut cu tipuri de date45!" 
+                                   ] 
+                        } 
+           }
+   }
