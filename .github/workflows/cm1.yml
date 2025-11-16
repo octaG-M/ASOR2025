@@ -1,6 +1,13 @@
 
 name: Comanda manuală 1
 on: !!str "workflow_dispatch"
-jobs: !!map { mesagerie: !!map { runs-on: ubuntu-latest, steps: !!seq [ run: echo Salut2 ] } }
+jobs: !!map { 
+  mesagerie: !!map { 
+    runs-on: ubuntu-latest, 
+    steps: !!seq [ 
+      run: echo Salut2 
+      ] 
+  } 
+}
 
 
