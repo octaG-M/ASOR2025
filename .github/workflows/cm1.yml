@@ -4,6 +4,6 @@ on:
 jobs:
   mesagerie:
     runs-on: ubuntu-latest
-    steps: !!seq []
+    steps: !!seq [ run: echo Salut ]
 
 
