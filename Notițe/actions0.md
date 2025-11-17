@@ -1,6 +1,6 @@
 # Ce este o acțiune GitHub?
 
-- [DevOps, Iac, GitOps](#devops-iac-gitops)
+- [DevOps, IaC, GitOps](#devops-iac-gitops)
 - [GitHub Actions](#github-actions)
   - [O acțiune GitHub](#o-acțiune-github)
 
@@ -198,7 +198,8 @@ jobs:
   detaliile-cerute:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: prepararea-proiectului (Git Checkout)
+        uses: actions/checkout@v5
       - name: &obtinere obtinerea-detaliilor
         run: |
           mkdir -p ${{ runner.temp }}/octavian/notite
