@@ -5,7 +5,8 @@ jobs:
   detaliile-cerute:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: prepararea-proiectului
+        uses: actions/checkout@v5
       - name: &obtinere obtinerea-detaliilor
         run: |
           mkdir -p ${{ runner.temp }}/octavian/notite
