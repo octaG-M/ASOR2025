@@ -66,7 +66,7 @@ a unei execuții a fluxului de lucru, cu numele
 de `workflow_dispatch`, termen predefinit care
 sugerează o solicitare transmisă rapid, o 
 **expediere** de mesaj sau trimiterea unei 
-**depeșe** (termen scos din uz, de la englezescul 
+**depeșe** (cuvânt scos din uz, de la englezescul 
 *dispatch*).
 
 Evenimentul se inserează în script cu oricare 
