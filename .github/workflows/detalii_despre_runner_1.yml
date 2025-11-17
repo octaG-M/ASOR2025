@@ -5,7 +5,7 @@ jobs:
   detaliile-cerute:
     runs-on: ubuntu-latest
     steps:
-      - name: prepararea-proiectului
+      - name: prepararea-proiectului (Git Checkout)
         uses: actions/checkout@v5
       - name: &obtinere obtinerea-detaliilor
         run: |
