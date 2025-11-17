@@ -221,7 +221,7 @@ doi pași:
   unui software, adică 
   [Git](https://git-scm.com/). 
 - Cel de-al doilea pas constă din rularea, cu termenul predefinit 
-  [run](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_iddefaultsrun),
+  [run](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsrun),
   a unui script de interpretor. Aici, întrebuințăm
   [variabila de mediu](https://docs.github.com/en/actions/reference/workflows-and-actions/variables#default-environment-variables) 
   `GITHUB_WORKSPACE` pentru a ne referi la 
