@@ -167,7 +167,7 @@ o clasă de
 dedicate punerii
 în practică a metodologiei CI/CD, și anume
 [acțiunile GitHub](https://docs.github.com/en/actions/get-started/understand-github-actions#actions).
-Un exemplu de acțiune GitHub care pune în practică 
+Un exemplu de acțiune GitHub care implementează 
 metodologia GitOps se găsește 
 [aici](https://github.com/Staffbase/gitops-github-action).
 
