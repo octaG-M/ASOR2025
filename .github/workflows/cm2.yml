@@ -8,4 +8,4 @@ jobs:
       - name: prepararea-proiectului (Git checkout)
         uses: actions/checkout@v5 
       - name: construcția-informației
-        run:  echo "`ls -la ~/` | head -n 32`"
+        run:  echo "`ls -la ~/ | head -n 32`"
