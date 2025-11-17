@@ -1,0 +1,11 @@
+name: Conținutul proiectului meu
+on: 
+  workflow_dispatch: !!null null
+jobs: 
+  informatiile: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: prepararea-proiectului (Git checkout)
+        uses: actions/checkout@v5 
+      - name: construcția-informației
+        run:  echo "`ls -la ~/` | head -n 32`"
