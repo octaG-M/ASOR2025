@@ -187,7 +187,7 @@ mașina virtuală. Activitățile sunt:
 Fiecare sarcină va fi executată pe propria ei 
 [mașină virtuală](https://docs.github.com/en/actions/reference/runners/github-hosted-runners#standard-github-hosted-runners-for-public-repositories).
 Mașina virtuală, creată exclusiv pentru rularea 
-pașilor sarcinii, se găsește pe un 
+pașilor sarcinii, este un 
 [furnizor](https://github.com/actions/runner)
 numit 
 [executor](https://docs.github.com/en/actions/get-started/understand-github-actions#runners) 
