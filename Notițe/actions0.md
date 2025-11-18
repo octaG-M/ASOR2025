@@ -14,8 +14,9 @@ a acestuia pe diverse mașini/platforme de calcul.
 
 ## DevOps, IaC, GitOps
 
-Sistemul de **control al versiunii** unui produs,
-întrebuințat pe platforma GitHub, este 
+Sistemul de 
+[control al versiunii](https://en.wikipedia.org/wiki/Version_control) 
+unui produs, întrebuințat pe platforma GitHub, este 
 [Git](https://git-scm.com/).
 El permite:
 
