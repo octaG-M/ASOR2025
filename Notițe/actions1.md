@@ -216,10 +216,9 @@ doi pași:
   disponibil pe mașina virtuală. Această **punere la dispoziție**
   (în engleză, *checkout*) a detaliilor folosește un 
   [termen predefinit](https://git-scm.com/docs/git-checkout) 
-  din terminologia celui mai cunoscut (IMHO)
-  [sistem de control al versiunii](https://en.wikipedia.org/wiki/Version_control) 
-  unui software, adică 
-  [Git](https://git-scm.com/). 
+  din terminologia celui mai cunoscut (IMHO) sistem de control 
+  al versiunii unui produs informatic, adică 
+  [Git](./actions0.md#devops-iac-gitops). 
 - Cel de-al doilea pas constă din rularea, cu termenul predefinit 
   [run](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsrun),
   a unui script de interpretor. Aici, întrebuințăm
