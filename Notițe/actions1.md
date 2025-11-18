@@ -208,7 +208,7 @@ predefinită
 Sarcina următoare, `informatiile`, trebuie să parcurgă
 doi pași:
 
-- Primul pas apelează, utilizând termenul predefinit 
+- Primul pas apelează, utilizând cuvântul predefinit 
   [uses](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsuses), 
   acțiunea GitHub 
   [checkout](https://github.com/marketplace/actions/checkout),
@@ -216,7 +216,7 @@ doi pași:
   disponibil pe mașina virtuală. Această **punere la dispoziție**
   (în engleză, *checkout*) a detaliilor folosește un 
   [termen predefinit](https://git-scm.com/docs/git-checkout) 
-  din terminologia celui mai cunoscut
+  din terminologia celui mai cunoscut (IMHO)
   [sistem de control al versiunii](https://en.wikipedia.org/wiki/Version_control) 
   unui software, adică 
   [Git](https://git-scm.com/). 
@@ -228,7 +228,7 @@ doi pași:
   [calea](https://en.wikipedia.org/wiki/Path_(computing)) 
   proiectului, respectiv o 
   [expresie](https://docs.github.com/en/actions/reference/workflows-and-actions/expressions), 
-  adică constructul `${{ nume-de-variabilă }}`, pentru a 
+  dată de constructul `${{ nume-de-variabilă }}`, pentru a 
   introduce calea în script.
 
 ```yaml
