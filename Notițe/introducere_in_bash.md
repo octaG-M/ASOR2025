@@ -41,7 +41,7 @@ cu
 
 > [!Note]
 > Aceeași informație, dar însoțită de un 
-> [text informativ](https://www.gnu.org/software/bash/manual/bash.html#Invoking-Bash-1),
+> [text juridic](https://www.gnu.org/software/bash/manual/bash.html#Invoking-Bash-1),
 > este disponibilă ca rezultat al executării comenzii:
 >
 > ```bash
