@@ -30,9 +30,8 @@ același nume), de pe platforma GitHub:
   fișierul `tema1.md`
 - realizați **commit**-ul rezultatului 
   în proiect
-- faceți o **PR** (cerere de 
-  **pull request**) către proiectul meu 
-  ASOR2025
+- faceți o **PR** (adică, un **pull request**) 
+  către proiectul meu ASOR2025
 
 Ajutor:
 - [tutorialul de Markdown](https://github.com/octaG-M/ASOR2025/blob/main/Noti%C8%9Be/introducere_in_markdown.md)
@@ -40,5 +39,5 @@ Ajutor:
 ## Termen-limită
 
 Pentru ca tema să fie luată în considerare,
-ea va trebui transmisă la adresa mea de e-mail
-până în data de `03.12.2025` la orele `23:59:59`.
+cererea (PR-ul) va trebui realizată până în 
+data de `03.12.2025` la orele `23:59:59`.
