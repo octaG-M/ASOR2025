@@ -22,6 +22,7 @@ contul dvs. al **repository**-ului meu cu
 același nume), de pe platforma GitHub:
 
 - construiți un fișier intitulat `tema1.md`
+  în directorul `Activități/nume.prenume`
 - editați [traducerea](#traducere)
   realizată la cerința anterioară în 
   **Markdown**
