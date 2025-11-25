@@ -1,5 +1,5 @@
 ## Istoria shell-urilor UNIX
-Indepente&#539;a shell-ului fat&#259; de sistemul de operare windows propriu-zis a adus la dezvoltarea de zeci de shell-uri de-a lungul istoriei *UNIX*, de&#537;i doar c&#226;teva au ajuns sa fie utilizate pe scara larg&#259;.
+Independen&#539;a shell-ului fat&#259; de sistemul de operare windows propriu-zis a adus la dezvoltarea de zeci de shell-uri de-a lungul istoriei UNIX, de&#537;i doar c&#226;teva au ajuns sa fie utilizate pe scara larg&#259;.
 Primul shell important a fost shell-ul Bourne (numit după inventatorul său, Steven Bourne); acesta a fost inclus în prima versiune populară de UNIX, Versiunea 7, începând din 1979. Shell-ul Bourne este cunoscut în sistem sub numele de sh. Deși UNIX a trecut prin foarte multe schimbări, shell-ul Bourne este încă popular și practic neschimbat. Mai multe utilitare UNIX și funcții de administrare depind de el.
 
 Primul shell alternativ utilizat pe scară largă a fost shell-ul C, sau *csh*. Acesta a fost scris de Bill Joy la Universitatea din California, Berkeley, ca parte a distribuției BSD (Berkeley Software Distribution) a UNIX, apărută la câțiva ani după Versiunea 7.
