@@ -55,29 +55,29 @@ final: stx $02
 ;PROGRAM 9
 define numarul1 $ae
 define numarul2 $f
-      lda #numarul1
-      sta $00
-      lda #numarul2
-      sta $01
-      cmp $00
-      bcs final
-      ldx $00
-      sta $00
-      stx $01
+       lda #numarul1
+       sta $00
+       lda #numarul2
+       sta $01
+       cmp $00
+       bcs final
+       ldx $00
+       sta $00
+       stx $01
 final: brk
 ;PROGRAM 10
-define comparat $ae
-define comparator $f
-lda #comparat
-cmp #comparator
-bcs maimaresauegal
-sta $00
-jmp final
+define         comparat $ae
+define         comparator $f
+               lda #comparat
+               cmp #comparator
+               bcs maimaresauegal
+               sta $00
+               jmp final
 maimaresauegal: bne maimare
-sta $01
-jmp final
-maimare: sta $02
-final: brk
+               sta $01
+               jmp final
+maimare:       sta $02
+final:         brk
 ;PROGRAM 11
       lda #%10 11 11 00
         sta $00
