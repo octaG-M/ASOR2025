@@ -33,13 +33,13 @@ Dacă primești un mesaj de tipul „**not found**”, este posibil ca sistemul 
 Odată ce știi că ai bash pe sistemul tău, îl poți apela din orice alt shell ai folosi tastând `bash` ca mai sus. Totuși, este mult mai bine să îl setezi ca *login shell*, adică shell-ul pe care îl primești automat de fiecare dată când te conectezi. Este posibil să poți face instalarea singur. Iată instrucțiuni concepute pentru a funcționa pe cea mai largă varietate de sisteme UNIX. Dacă ceva nu funcționează (de ex., tastezi o comandă și primești un mesaj „not found” sau o linie goală ca răspuns), va trebui să întrerupi procesul și să îți consulți administratorul de sistem. Alternativ, consultă Capitolul 12, unde prezentăm o metodă mai puțin directă de a înlocui shell-ul tău curent.
 
 Trebuie să afli unde se află **bash** pe sistemul tău, adică în ce director este instalat. Ai putea găsi locația tastând `whereis bash` (mai ales dacă folosești shell-ul C); dacă acest lucru nu funcționează, încearcă `whence bash`, `which bash` sau această comandă complexă:*
-```
+```bash
 grep bash /etc/passwd | awk -F: '{print $7}' | sort -u
 ```
 
 Ar trebui să vezi un răspuns care arată ca **/bin/bash** sau **/usr/local/bin/bash**.
 Pentru a instala bash ca shell de login, tastează `chsh bash-name`, unde *bash-name* este răspunsul pe care l-ai obținut de la comanda `whereis` (sau orice altă comandă care a funcționat). De exemplu:
-```
+```bash
 % chsh /usr/local/bin/bash
 ```
 Vei primi fie un mesaj de eroare care spune că shell-ul este invalid, fie ți se va cere parola.† Tastează parola, apoi deloghează-te și loghează-te din nou pentru a începe să folosești *bash*.
