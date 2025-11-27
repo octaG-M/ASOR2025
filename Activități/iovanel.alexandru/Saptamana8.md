@@ -70,6 +70,20 @@ define numarul2 $f
        stx	$01
 final: brk
 
+;PROGRAMUL 10
+define          comparat   $ae
+define          comparator $f
+                lda        #comparat
+                cmp        #comparator
+                bcs        maimaresauegal
+                sta        $00
+                jmp        final
+maimaresauegal: bne        maimare
+                sta        $01
+                jmp        final
+maimare:        sta        $02
+final:          brk
+
 ;PROGRAMUL 11
            lda # % 01 11 11 00
            sta $00
