@@ -1,4 +1,4 @@
-```
+```6502
 ;PROGRAMUL 4
           lda #$07
           ldx #$0
@@ -64,10 +64,7 @@ define numarul2 $f
        lda      #numarul2
        sta      $01
        cmp      $00
-
        bcs      final
-
-
        ldx      $00
        sta      $00
        stx      $01
