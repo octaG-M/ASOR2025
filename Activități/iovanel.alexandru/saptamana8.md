@@ -1,4 +1,4 @@
-```
+```6502
 ;PROGRAMUL 4
           lda #$07
           ldx #$0
