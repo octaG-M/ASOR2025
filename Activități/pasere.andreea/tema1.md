@@ -18,3 +18,34 @@ Deși shell-ul Bourne este încă cunoscut ca shell-ul "standard", *bash* devine
 Cealaltă caracteristică majoră a *bash*, destinată în principal utilizatorilor interactivi, este controlul joburilor. După cum explică Capitolul 8, controlul joburilor îți oferă posibilitatea de a opri, porni și întrerupe orice număr de comenzi în același timp. Această funcționalitate a fost împrumutată aproape mot-a-mot din shell-ul C.
 
 Restul avantajelor importante ale *bash* sunt destinate în principal personalizatorilor de shell și programatorilor. Acesta are multe opțiuni și variabile noi pentru personalizare, iar caracteristicile sale de programare au fost extinse semnificativ pentru a include definirea de funcții, mai multe structuri de control, aritmetică pe numere întregi, control avansat al I/O și altele.
+
+# Obținerea bash
+
+Este posibil să folosești sau nu *bash* în acest moment. Administratorul sistemului tău probabil ți-a configurat contul cu shell-ul pe care îl folosește el ca “standard” pe sistem. Poate nici măcar nu ai fost conștient că există mai multe shell-uri disponibile.
+
+Totuși, este ușor să determini ce shell folosești. Autentifică-te în sistem și tastează **echo $SHELL** la prompt. Vei vedea un răspuns care conține **sh**, **csh**, **ksh** sau **bash**; acestea corespund shell-urilor Bourne, C, Korn și *bash*. (Există și șansa să folosești un alt shell, precum *tcsh*.)
+
+Dacă nu folosești *bash* și vrei să îl folosești, trebuie mai întâi să afli dacă există pe sistemul tău. Tastează pur și simplu **bash**. Dacă primești un nou prompt care conține o informație urmată de un semn al dolarului (de ex. **bash3 $**), atunci totul este în regulă; tastează **exit** pentru a te întoarce la shell-ul normal.
+
+Dacă primești mesajul „not found”, este posibil ca sistemul tău să nu îl aibă. Întreabă administratorul de sistem sau un utilizator experimentat; există șansa ca o versiune de *bash* să fie instalată undeva într-un director la care nu ai acces de obicei. Dacă nu, consultă Capitolul 11 pentru a afla cum poți obține o versiune de *bash*.
+
+Odată ce știi că ai bash pe sistem, îl poți porni din orice alt shell tastând **bash** ca mai sus. Totuși, este mult mai bine să îl instalezi ca *login shell*, adică shell-ul care pornește automat atunci când te autentifici. Este posibil să poți face instalarea singur. Instrucțiunile de mai jos sunt concepute să funcționeze pe cât mai multe sisteme UNIX. Dacă ceva nu funcționează (de exemplu, tastezi o comandă și primești „not found” sau doar o linie goală), va trebui să renunți la proces și să mergi la administratorul tău. Alternativ, consultă Capitolul 12, unde prezentăm o metodă mai puțin directă de înlocuire a shell-ului curent.
+
+Trebuie să afli unde se află bash pe sistemul tău, adică în ce director este instalat. Poți găsi locația tastând **whereis bash** (în special dacă folosești C shell); dacă nu funcționează, încearcă **whence bash**, **which bash** sau această comandă mai complexă:
+```bash
+grep bash /etc/passwd | awk -F: '{print $7}' | sort -u
+```
+
+Ar trebui să vezi un răspuns de forma */bin/bash* sau */usr/local/bin/bash*.
+
+Pentru a instala *bash* ca login shell, tastează **chsh** *bash-name*, unde *bash-name* este răspunsul obținut în urma comenzii **whereis** (sau oricare dintre metodele care au funcționat). De exemplu:
+```bash
+% chsh /usr/local/bin/bash
+```
+Vei primi fie un mesaj de eroare care spune că shell-ul este invalid, fie ți se va cere parola. Tastează parola, apoi deloghează-te și loghează-te din nou pentru a începe să folosești *bash*.
+
+# Utilizarea interactivă a shell-ului
+
+Când folosești shell-ul în mod interactiv, intri într-o sesiune de autentificare care începe atunci când te conectezi și se încheie când tastezi **exit** sau **logout** sau apeși CTRL-D. În timpul unei sesiuni de autentificare, tastezi *linii de comandă* în shell; acestea sunt linii de text care se încheie cu RETURN și pe care le introduci în terminalul sau stația ta de lucru.
+
+Implicit, shell-ul îți solicită fiecare comandă cu un șir informativ urmat de un semn dolar, deși, după cum vei vedea în Capitolul 3, întregul prompt poate fi modificat.
