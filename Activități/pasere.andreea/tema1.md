@@ -49,3 +49,12 @@ Vei primi fie un mesaj de eroare care spune că shell-ul este invalid, fie ți s
 Când folosești shell-ul în mod interactiv, intri într-o sesiune de autentificare care începe atunci când te conectezi și se încheie când tastezi **exit** sau **logout** sau apeși CTRL-D. În timpul unei sesiuni de autentificare, tastezi *linii de comandă* în shell; acestea sunt linii de text care se încheie cu RETURN și pe care le introduci în terminalul sau stația ta de lucru.
 
 Implicit, shell-ul îți solicită fiecare comandă cu un șir informativ urmat de un semn dolar, deși, după cum vei vedea în Capitolul 3, întregul prompt poate fi modificat.
+
+# Comenzi, argumente și opțiuni
+
+Liniile de comandă shell sunt formate din unul sau mai multe cuvinte, separate prin spații sau TAB-uri. Primul cuvânt de pe linie este *comanda*. Restul (dacă există) sunt *argumente* (numite și *parametri*) ale comenzii, reprezentând nume de lucruri asupra cărora comanda va acționa.
+
+De exemplu, linia de comandă **lp myfile** constă din comanda lp (print a file) și argumentul unic **myfile**. lp tratează **myfile** ca numele unui fișier de imprimat. Argumentele sunt adesea nume de fișiere, dar nu neapărat: în comanda **mail cam**, programul *mail* tratează **cam** ca numele utilizatorului către care va fi trimis mesajul.
+O *opțiune* este un tip special de argument care oferă comenzii informații specifice despre ceea ce trebuie să facă. Opțiunile constau de obicei dintr-o cratimă urmată de o literă; spunem "de obicei" deoarece aceasta este o convenție, mai degrabă decât o regulă strictă. Comanda **lp -h myfile** conține opțiunea **-h**, care îi spune lui lp să nu imprime "pagina banner" înainte de a imprima fișierul.
+
+Uneori, opțiunile au propriile argumente. De exemplu, **lp -d lp1 -h myfile** are două opțiuni și un argument. Prima opțiune este **-d lp1** , ceea ce înseamnă "Trimiteți ieșirea către imprimanta (destinație) numită **lp1**". A doua opțiune și argumentul sunt aceleași ca în exemplul anterior
