@@ -10,3 +10,11 @@ Shell-ul C își ia numele de la asemănarea comenzilor sale cu instrucțiunile 
 
 În ultimii ani, un număr de alte shell-uri au devenit populare. Cel mai notabil este shell-ul Korn. Acest shell este un produs comercial care încorporează cele mai bune caracteristici ale shell-urilor Bourne și C, plus multe caracteristici proprii.  
 Shell-ul Korn este similar cu *bash* din multe puncte de vedere; ambele au numeroase caracteristici care le fac ușor de utilizat. Avantajul lui *bash* este că este gratuit. Pentru mai multe informații despre shell-ul Korn, vezi Anexa A.
+
+# Caracteristici ale bash
+
+Deși shell-ul Bourne este încă cunoscut ca shell-ul "standard", *bash* devine din ce în ce mai popular. Pe lângă compatibilitatea cu shell-ul Bourne, acesta include cele mai bune caracteristici ale shell-urilor C și Korn, precum și mai multe avantaje proprii. Modurile de editare în linia de comandă ale *bash* sunt caracteristicile care tind să atragă cel mai mult utilizatorii la început. Cu editarea liniei de comandă, este mult mai ușor să revii și să corectezi greșeli sau să modifici comenzi anterioare decât este cu mecanismul de istoric al shell-ului C—iar shell-ul Bourne nu îți permite deloc acest lucru.
+
+Cealaltă caracteristică majoră a *bash*, destinată în principal utilizatorilor interactivi, este controlul joburilor. După cum explică Capitolul 8, controlul joburilor îți oferă posibilitatea de a opri, porni și întrerupe orice număr de comenzi în același timp. Această funcționalitate a fost împrumutată aproape mot-a-mot din shell-ul C.
+
+Restul avantajelor importante ale *bash* sunt destinate în principal personalizatorilor de shell și programatorilor. Acesta are multe opțiuni și variabile noi pentru personalizare, iar caracteristicile sale de programare au fost extinse semnificativ pentru a include definirea de funcții, mai multe structuri de control, aritmetică pe numere întregi, control avansat al I/O și altele.
