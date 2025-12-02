@@ -52,9 +52,9 @@ Implicit, shell-ul îți solicită fiecare comandă cu un șir informativ urmat 
 
 # Comenzi, argumente și opțiuni
 
-Liniile de comandă shell sunt formate din unul sau mai multe cuvinte, separate prin spații sau TAB-uri. Primul cuvânt de pe linie este *comanda*. Restul (dacă există) sunt *argumente* (numite și *parametri*) ale comenzii, reprezentând nume de lucruri asupra cărora comanda va acționa.
+Liniile de comandă shell sunt formate din unul sau mai multe cuvinte, separate prin spații sau TAB-uri. Primul cuvânt de pe linie este *comanda*. Restul (dacă există) sunt *argumente* (numite și *parametrii*) ale comenzii, reprezentând nume de lucruri asupra cărora comanda va acționa.
 
-De exemplu, linia de comandă **lp myfile** constă din comanda lp (print a file) și argumentul unic **myfile**. lp tratează **myfile** ca numele unui fișier de imprimat. Argumentele sunt adesea nume de fișiere, dar nu neapărat: în comanda **mail cam**, programul *mail* tratează **cam** ca numele utilizatorului către care va fi trimis mesajul.
+De exemplu, linia de comandă **lp myfile** constă din comanda *lp* (print a file) și argumentul unic **myfile**. *lp* tratează **myfile** ca numele unui fișier de imprimat. Argumentele sunt adesea nume de fișiere, dar nu neapărat: în comanda **mail cam**, programul *mail* tratează **cam** ca numele utilizatorului către care va fi trimis mesajul.
 
 O *opțiune* este un tip special de argument care oferă comenzii informații specifice despre ceea ce trebuie să facă. Opțiunile constau de obicei dintr-o cratimă urmată de o literă; spunem "de obicei" deoarece aceasta este o convenție, mai degrabă decât o regulă strictă. Comanda **lp -h myfile** conține opțiunea **-h**, care îi spune lui *lp* să nu imprime "pagina banner" înainte de a imprima fișierul.
 
