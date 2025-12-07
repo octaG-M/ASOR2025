@@ -96,7 +96,7 @@ Vei primi fie un mesaj de eroare care spune că shell-ul este invalid, fie vei f
 
 Utilizarea interactivă a shell-ului
 
-Când folosești shell-ul în mod interactiv, participi la o sesiune de login care începe în momentul în care te autentifici și se încheie atunci când tastezi `exit` , `logout` sau apeși `CTRL-D` .‡ În timpul unei sesiuni de login, tastezi linii de comandă în shell; acestea sunt linii de text care se termină cu tasta `RETURN` și pe care le introduci la terminalul sau stația ta de lucru.
+Când folosești shell-ul în mod interactiv, participi la o sesiune de login care începe în momentul în care te autentifici și se încheie atunci când tastezi `exit` , `logout` sau apeși `CTRL-D`. În timpul unei sesiuni de login, tastezi linii de comandă în shell; acestea sunt linii de text care se termină cu tasta `RETURN` și pe care le introduci la terminalul sau stația ta de lucru.
 
 În mod implicit, shell-ul îți afișează un prompt pentru fiecare comandă, constând într-un șir de informații urmat de un simbol dolar `$`. Totuși, după cum vei vedea în Capitolul 3, întregul prompt poate fi modificat.
 
