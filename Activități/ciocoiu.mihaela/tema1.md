@@ -31,16 +31,23 @@ Restul avantajelor importante ale bash sunt destinate în principal persoanelor 
 Este posibil să folosești sau nu *bash* în acest moment. Administratorul tău de sistem probabil ți-a configurat contul cu shell-ul pe care îl utilizează el ca “standard” pe sistem. Este posibil nici măcar să nu fi știut că există mai multe shell-uri disponibile.
 
 Totuși, este foarte ușor să afli ce shell folosești. Autentifică-te și tastează:
+
+```bash
 echo $SHELL
+```
 
 Vei vedea un răspuns care conține sh, csh,sh sau bash; acestea reprezintă shell-urile Bourne, C, Korn și bash, respectiv. (Există și posibilitatea să folosești un alt shell, cum ar fi tcsh.)
 
 
 ### Verificarea existenței bash pe sistem
 
-Dacă nu folosești *bash* și vrei să îl folosești, trebuie mai întâi să verifici dacă există pe sistemul tău. Tastează: bash
+Dacă nu folosești *bash* și vrei să îl folosești, trebuie mai întâi să verifici dacă există pe sistemul tău. Tastează: 
 
-Dacă primești un nou prompt ce conține unele informații urmate de un semn dolar (de exemplu bash3 $), atunci totul este în regulă. Tastează exit pentru a reveni la shell-ul tău obișnuit.
+```bash
+bash
+```
+
+Dacă primești un nou prompt ce conține unele informații urmate de un semn dolar (de exemplu bash3 $), atunci totul este în regulă. Tastează **exit** pentru a reveni la shell-ul tău obișnuit.
 
 Dacă primești mesajul „not found”, este posibil ca sistemul tău să nu aibă bash instalat. Întreabă administratorul de sistem sau un utilizator experimentat: e posibil ca bash să fie instalat într-un director care nu este accesibil în mod normal. Dacă nu există, consultă *Capitolul 11* pentru a afla cum poți obține o versiune de bash.
 
@@ -55,28 +62,36 @@ Este posibil să poți face această schimbare singur. Următoarele instrucțiun
 ### Găsirea locației în care este instalat bash
 
 Trebuie să afli unde este instalat bash, adică în ce director se află. Poți încerca: whereis bash(în special dacă folosești C shell). Dacă nu funcționează, încearcă:
-whence bash, which bash sau comanda mai complexă:
+**whence bash**, **which bash** sau comanda mai complexă:
 
+```bash
 grep bash /etc/passwd | awk -F: '{print $7}' | sort -u
+```
+
 Ar trebui să vezi un răspuns de forma:
+
+```bash
 /bin/bash
 /usr/local/bin/bash
-
+```
 
 ### Setarea bash ca shell de login
 
-Pentru a seta bash ca shell de login, tastează: chsh bash-name
+Pentru a seta bash ca shell de login, tastează: **chsh bash-name**,
 unde *bash-name* este calea completă găsită mai devreme. De exemplu: 
-% chsh /usr/local/bin/bash
+
+```bash
+chsh /usr/local/bin/bash
+```
 
 Vei primi fie un mesaj de eroare care spune că shell-ul este invalid, fie ți se va cere parola. Introdu parola, apoi deloghează-te și autentifică-te din nou pentru a începe să folosești bash.
 
 # Utilizarea interactivă a shell-ului
 
-Atunci când folosești shell-ul în mod interactiv, intri într-o sesiune de autentificare care începe în momentul în care te loghezi și se termină când tastezi exit sau logout sau când apeși CTRL-D. 
+Atunci când folosești shell-ul în mod interactiv, intri într-o sesiune de autentificare care începe în momentul în care te loghezi și se termină când tastezi exit sau logout sau când apeși `CTRL-D`. 
 În timpul unei sesiuni de lucru, tastezi *linii de comandă* pentru shell — acestea sunt linii de text care se încheie cu tasta *RETURN* și pe care le introduci în terminalul sau stația ta de lucru.
 
-În mod implicit, shell-ul îți afișează un *prompt* pentru fiecare comandă, alcătuit dintr-un șir de informații urmat de simbolul dolar $. Totuși, așa cum vei vedea în Capitolul 3, întregul prompt poate fi modificat.
+În mod implicit, shell-ul îți afișează un *prompt* pentru fiecare comandă, alcătuit dintr-un șir de informații urmat de simbolul dolar `$`. Totuși, așa cum vei vedea în Capitolul 3, întregul prompt poate fi modificat.
 
 
 
@@ -84,10 +99,18 @@ Atunci când folosești shell-ul în mod interactiv, intri într-o sesiune de au
 
 Liniile de comandă din shell sunt alcătuite din unul sau mai multe cuvinte, separate pe linia de comandă prin spații sau TAB-uri. *Primul cuvânt* de pe linie este *comanda. Restul cuvintelor (dacă există) sunt **argumente* (numite și parametri) ale comenzii, reprezentând nume ale obiectelor asupra cărora acționează comanda.
 
-De exemplu, linia de comandă: # lp myfile
+De exemplu, linia de comandă: 
+
+```bash
+lp myfile
+```
 
 conține comanda lp (care imprimă un fișier) și argumentul myfile. Comanda lp tratează myfile ca fiind numele fișierului de imprimat.
-Argumentele sunt adesea nume de fișiere, dar nu întotdeaun în comanda: mail cam
+Argumentele sunt adesea nume de fișiere, dar nu întotdeaun în comanda: 
+
+```bash
+mail cam
+```
 
 programul mail tratează cam ca fiind numele utilizatorului către care va fi trimis mesajul.
 
@@ -97,15 +120,21 @@ programul mail tratează cam ca fiind numele utilizatorului către care va fi tr
 
 O *opțiune* este un tip special de argument care oferă comenzii informații specifice despre ce ar trebui să facă. Opțiunile constau, de obicei, dintr-o cratimă urmată de o literă. Spunem „de obicei”, deoarece aceasta este o convenție, nu o regulă strictă.
 
-Comanda: lp -h myfile
+Comanda: 
+
+```bash
+lp -h myfile
+```
 
 conține opțiunea -h, care îi spune comenzii lp *să nu tipărească pagina de antet* înainte de a tipări fișierul.
 
 Uneori, opțiunile au propriile lor argumente. De exemplu:
 
+```bash
 lp -d lp1 -h myfile
+```
 
-conține *două opțiuni* și *un argument*. Prima opțiune este: -d lp1
+conține *două opțiuni* și *un argument*. Prima opțiune este: **-d lp1**,
 
 care înseamnă „Trimite ieșirea către imprimanta (destinația) numită lp1”. A doua opțiune și argumentul sunt identice cu cele din exemplul anterior.
 
