@@ -40,7 +40,7 @@ Ar trebui să vezi un răspuns de forma */bin/bash* sau */usr/local/bin/bash*.
 
 Pentru a instala *bash* ca login shell, tastează **chsh** *bash-name*, unde *bash-name* este răspunsul obținut în urma comenzii **whereis** (sau oricare dintre metodele care au funcționat). De exemplu:
 ```bash
-% chsh /usr/local/bin/bash
+chsh /usr/local/bin/bash
 ```
 Vei primi fie un mesaj de eroare care spune că shell-ul este invalid, fie ți se va cere parola. Tastează parola, apoi deloghează-te și loghează-te din nou pentru a începe să folosești *bash*.
 
@@ -58,4 +58,4 @@ De exemplu, linia de comandă **lp myfile** constă din comanda *lp* (print a fi
 
 O *opțiune* este un tip special de argument care oferă comenzii informații specifice despre ceea ce trebuie să facă. Opțiunile constau de obicei dintr-o cratimă urmată de o literă; spunem "de obicei" deoarece aceasta este o convenție, mai degrabă decât o regulă strictă. Comanda **lp -h myfile** conține opțiunea **-h**, care îi spune lui *lp* să nu imprime "pagina banner" înainte de a imprima fișierul.
 
-Uneori, opțiunile au propriile argumente. De exemplu, **lp -d lp1 -h myfile** are două opțiuni și un argument. Prima opțiune este **-d lp1** , ceea ce înseamnă "Trimiteți ieșirea către imprimanta (destinație) numită **lp1**". A doua opțiune și argumentul sunt aceleași ca în exemplul anterior
+Uneori, opțiunile au propriile argumente. De exemplu, **lp -d lp1 -h myfile** are două opțiuni și un argument. Prima opțiune este **-d lp1** , ceea ce înseamnă "Trimiteți ieșirea către imprimanta (destinație) numită **lp1**". A doua opțiune și argumentul sunt aceleași ca în exemplul anterior.
